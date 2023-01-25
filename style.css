@@ -7,6 +7,36 @@ body {
     background-color: #040404;
     color: #FFFFFF;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+    background-color: #171717;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+li {
+    display: flex;
+    padding: 12px;
+    list-style-type: none;
+    background-color: #171717;
+}
+
+li>a {
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #171717;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+li>a:hover {
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
 }
 
 .container {
@@ -87,4 +117,17 @@ input {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.aboutContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutWrapper {
+    display: flex;
+    gap: 40px;
 }
